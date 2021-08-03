@@ -1,0 +1,46 @@
+.header {
+    padding: 32px;
+    .page-title {
+        font-size: 24px;
+        
+        margin: 0px;
+        margin-right: 47px;
+    }
+    button {
+        &:hover {
+            color: #198754;
+        }
+    }
+}
+
+.admin {
+    .page-content {
+        tbody {
+            tr {
+                &:hover {
+                    background: $color-gray-100;
+                }
+            }
+        }
+        .page-navigation {
+            margin-bottom: 32px;
+            .page-link {
+                color: $color-primary;
+                border: 1px solid;
+                border-color: $color-success;
+                &:hover {
+                    background: $color-success;
+                    color: white;
+                }
+            }
+            .page-item {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    
+    .icon-success {
+        color: $color-success;
+    }
+}

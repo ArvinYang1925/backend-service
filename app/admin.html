@@ -1,0 +1,185 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="admin d-flex flex-column">
+    <div class="header d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <h2 class="page-title">Admin</h2>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <span class="material-icons icon-success">add</span>
+                <div class="btn-text">Add New Admin</div>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="colorm-label">Name</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="colorm-label">Email</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success"
+                                data-bs-dismiss="moda l">Cancel</button>
+                            <button type="button" class="btn btn-outline-success">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="function-area d-flex align-items-center">
+            <a href="#"><span class="material-icons me-4">notifications_active</span></a>
+            <a href="#"><span class="material-icons">search</span></a>
+        </div>
+    </div>
+    <div class="page-content d-flex flex-column justify-content-between px-4 flex-grow-1 ">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="d-flex">ID<span class="material-icons icon-success ms-1">arrow_downward</span></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col">#1</td>
+                    <td class="col">Emir Wicks</td>
+                    <td class="col">emir.wicks@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>     
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#2</td>
+                    <td class="col">Zaina Goldsmith</td>
+                    <td class="col">zaina.goldsmith@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#3</td>
+                    <td class="col">Mahima Lopez</td>
+                    <td class="col">Mahima.Lopez@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#4</td>
+                    <td class="col">Pharrell Murray</td>
+                    <td class="col">Pharrell.Murray@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#5</td>
+                    <td class="col">Annika Mcbride</td>
+                    <td class="col">Annika.Mcbride@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#6</td>
+                    <td class="col">Fatimah Clark</td>
+                    <td class="col">Fatimah.Clark@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#7</td>
+                    <td class="col">Klaudia Rhodes</td>
+                    <td class="col">Klaudia.Rhodes@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#8</td>
+                    <td class="col">Tillie Lucero</td>
+                    <td class="col">Tillie.Lucero@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#9</td>
+                    <td class="col">Sabrina Stephenson</td>
+                    <td class="col">Sabrina.Stephenson@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col">#10</td>
+                    <td class="col">Annie Smith</td>
+                    <td class="col">Annie.Smith@mail.com</td>
+                    <td class="col">Yes</td>
+                    <td class="col text-end">
+                        <span class="material-icons me-4">visibility</span>
+                        <span class="material-icons">edit</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page-navigation d-flex justify-content-end">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link d-flex justify-content-center" href="#" aria-label="Previous">
+                        <span class="material-icons">navigate_before</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link d-flex justify-content-center" href="#" aria-label="Next">
+                        <span class="material-icons">navigate_next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
