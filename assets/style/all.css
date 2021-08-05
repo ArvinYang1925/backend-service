@@ -13,7 +13,7 @@ a {
 
 .sidebar {
   height: 100vh;
-  width: 296px;
+  min-width: 296px;
   background: #F8F9FA; }
   .sidebar .logo {
     margin: 32px; }
@@ -153,6 +153,9 @@ a {
 .assignment .task-list .task-content {
   font-size: 16px; }
 
+.assignment .assignment-comment p {
+  font-size: 12px; }
+
 .assignment .task-info .list-group-item {
   padding: 16px; }
 
@@ -173,6 +176,9 @@ a {
 .assignment .task-info .author .msg-time {
   color: #6C757D; }
 
+.assignment .task-info .replay span {
+  background: #F8F9FA; }
+
 .assignment .task-info .replay .download-link {
   width: 176px;
   padding: 8px 12px;
@@ -180,5 +186,13 @@ a {
   border: 1px solid;
   border-color: #CED4DA;
   background: #F8F9FA; }
+
+.assignment .reply-area .btn {
+  padding: 8px 32px;
+  border-radius: 2px; }
+
+.assignment .collapse .btn {
+  padding: 8px 32px;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=all.css.map */

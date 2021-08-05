@@ -47,14 +47,26 @@
   <div class="header d-flex justify-content-between">
     <h2 class="page-title">Assignment</h2>
     <div class="function-area d-flex align-items-center">
-            <a href="#"><span class="material-icons me-4">notifications_active</span></a>
-            <a href="#"><span class="material-icons">search</span></a>
+      <a href="#"><span class="material-icons me-4">notifications_active</span></a>
+      <a href="#"><span class="material-icons">search</span></a>
     </div>
   </div>
   <div class="page-content">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-4">
+          <div class="dropdown mb-1">
+            <a class="dropdown-toggle text-dark" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All(4)
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+              <li><a class="dropdown-item" href="#">4</a></li>
+            </ul>
+          </div>
           <div class="task-list">
             <ul class="list-group">
               <li class="list-group-item bg-light">
@@ -63,8 +75,8 @@
                   <p class="time">4 hrs ago</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="task-content fw-bold">Please check this file…</p>
-                    <p class="author">Emily Wang</p>
+                  <p class="task-content fw-bold">Please check this file…</p>
+                  <p class="author">Emily Wang</p>
                 </div>
               </li>
               <li class="list-group-item">
@@ -73,8 +85,8 @@
                   <p class="time">David Xu</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="task-content fw-bold">My Homework</p>
-                    <p class="author">David Xu</p>
+                  <p class="task-content fw-bold">My Homework</p>
+                  <p class="author">David Xu</p>
                 </div>
               </li>
               <li class="list-group-item">
@@ -83,8 +95,8 @@
                   <p class="time">18 hrs ago</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="task-content fw-bold">Have a problem with this…</p>
-                    <p class="author">Tony Wei</p>
+                  <p class="task-content fw-bold">Have a problem with this…</p>
+                  <p class="author">Tony Wei</p>
                 </div>
               </li>
               <li class="list-group-item">
@@ -93,14 +105,17 @@
                   <p class="time">19 hrs ago</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="task-content fw-bold">Did I do it right?</p>
-                    <p class="author">Christina Lin</p>
+                  <p class="task-content fw-bold">Did I do it right?</p>
+                  <p class="author">Christina Lin</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="task col-8 d-flex flex-column justify-content-between">
+          <div class="assignment-comment d-flex justify-content-end">
+            <p class="mb-2">2 comments</p>
+          </div>
           <div class="task-info mb-3">
             <div class="card">
               <div class="card-header">
@@ -118,7 +133,9 @@
                 <li class="list-group-item">
                   <div class="author d-flex align-items-center mb-3">
                     <div class="avater me-3">
-                      <img class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" alt="">
+                      <img class="rounded-circle"
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+                        alt="">
                     </div>
                     <div class="author-info">
                       <p class="author-name mb-1">Emily Wang</p>
@@ -126,11 +143,19 @@
                     </div>
                   </div>
                   <div class="replay ps-5 pe-3">
-                    <p class="message mb-3">
-                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?
-                    </p> 
-                    <a class="download-link d-flex" href="assets/images/pierre-chatel-innocenti-1667193-unsplash.jpg" download>
-                      <span class="material-icons me-2">attach_file</span>                        
+                    <p class="mb-3">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                      the
+                      following code the height of the <span class="text-success">div</span> is bigger than the
+                      height of the <span class="text-success">img</span> ?
+                      There
+                      is a gap below the image, but it doesn’t seems to be a padding/margin. <br />
+                      What is the gap or extra
+                      space below image?
+                    </p>
+                    <a class="download-link d-flex" href="assets/images/pierre-chatel-innocenti-1667193-unsplash.jpg"
+                      download>
+                      <span class="material-icons me-2">attach_file</span>
                       HW-2-David.zip
                     </a>
                   </div>
@@ -139,29 +164,87 @@
                   <div class="author d-flex justify-content-between mb-3">
                     <div class="d-flex align-items-center">
                       <div class="avater me-3">
-                        <img class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="">
+                        <img class="rounded-circle"
+                          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                          alt="">
                       </div>
                       <div class="author-info">
                         <p class="author-name mb-1">Andy Chen (You)</p>
                         <p class="msg-time">13:24 AM (1 hours ago)</p>
-                      </div> 
+                      </div>
                     </div>
                     <div class="function-area d-flex align-items-center">
-                      <a href="#"><span class="material-icons me-4">grade</span></a>
+                      <a href="#"><span class="material-icons-outlined me-4">grade</span></a>
                       <a href="#"><span class="material-icons">edit</span></a>
                     </div>
                   </div>
                   <div class="replay ps-5 pe-3">
-                    <p class="message mb-3">
-                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> 
-                      You can:<br><br> 
-                      　    • adjust the vertical-align of the image to position it elsewhere (e.g.<br>
-                          the middle ) or<br>
-                         　• change the display so it isn’t inline.
-                    </p> 
+                    <p>
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                      line
+                      that a, b, c and d sit on. There is space below that line for the descenders you find on
+                      letters
+                      like g, j, p and q. <br /><br />
+                      You can: <br /><br />
+                      • adjust the <span class="text-success">vertical-align</span> of the image to position
+                      it elsewhere
+                      (e.g. the <span class="text-success">middle</span> ) or <br />
+                      • change the <span class="text-success">display</span> so it isn’t inline.
+                    </p>
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+          <!-- reply collapse -->
+          <div class="collapse mb-3" id="collapseExample">
+            <div class="card">
+              <div class="card-header d-flex align-items-center">
+                <div class="dropdown me-4">
+                  <a class="dropdown-toggle text-dark" href="#" role="button" id="bodyTextLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Body Text
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="bodyTextLink">
+                    <li><a class="dropdown-item" href="#">Body</a></li>
+                    <li><a class="dropdown-item" href="#">Text</a></li>
+                  </ul>
+                </div>
+                <span class="material-icons me-4">
+                  format_bold
+                </span>
+                <span class="material-icons me-4">
+                  format_italic
+                </span>
+                <span class="material-icons me-4">
+                  format_list_bulleted
+                </span>
+
+                <span class="material-icons me-4">
+                  format_list_numbered
+                </span>
+
+                <span class="material-icons me-4">
+                  image
+                </span>
+                <span class="material-icons me-4">
+                  attachment
+                </span>
+
+                <span class="material-icons">
+                  code
+                </span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <textarea class="d-block w-100 mb-3 border-0" name="comment" id="comment" cols="30" rows="10 "
+                  placeholder="Reply an answer…"></textarea>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-outline-success me-3" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Cancel</button>
+                  <button type="button" class="btn btn-outline-success active">Reply</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="d-flex justify-content-between">
@@ -173,16 +256,17 @@
                 <span class="material-icons">navigate_next</span>
               </a>
             </div>
-            <div>
+            <div class="reply-area">
               <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
-              <button type="button" class="btn btn-outline-success">Reply</button>
+              <button type="button" class="btn btn-outline-success active" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    
+
+
   </div>
 </div>
     </div>
