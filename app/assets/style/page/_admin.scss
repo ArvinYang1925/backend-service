@@ -21,6 +21,11 @@
                     background: $color-gray-100;
                 }
             }
+            span {
+                &:hover {
+                    color: $color-success;
+                }
+            }
         }
         .page-navigation {
             margin-bottom: 32px;
