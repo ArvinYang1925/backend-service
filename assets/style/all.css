@@ -47,6 +47,9 @@ a {
 .admin .page-content tbody tr:hover {
   background: #F8F9FA; }
 
+.admin .page-content tbody span:hover {
+  color: #198754; }
+
 .admin .page-content .page-navigation {
   margin-bottom: 32px; }
   .admin .page-content .page-navigation .page-link {
