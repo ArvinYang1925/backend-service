@@ -11,39 +11,10 @@ current: admin
             <h2 class="page-title">Admin</h2>
             <!-- Button trigger modal -->
             <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
+                data-bs-target="#newAdminModal">
                 <span class="material-icons icon-success">add</span>
                 <div class="btn-text">Add New Admin</div>
             </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="colorm-label">Name</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="colorm-label">Email</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-success"
-                                data-bs-dismiss="moda l">Cancel</button>
-                            <button type="button" class="btn btn-outline-success">Add</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="function-area d-flex align-items-center">
             <a href="#"><span class="material-icons me-4">notifications_active</span></a>
@@ -68,8 +39,8 @@ current: admin
                     <td class="col">emir.wicks@mail.com</td>
                     <td class="col">Yes</td>
                     <td class="col text-end">
-                        <span class="material-icons me-4">visibility</span>     
-                        <span class="material-icons">edit</span>
+                        <span class="material-icons me-4" type="button" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span>     
+                        <span  class="material-icons" type="button" data-bs-toggle="modal" data-bs-target="#editModal">edit</span>
                     </td>
                 </tr>
                 <tr>
@@ -181,5 +152,219 @@ current: admin
                 </li>
             </ul>
         </div>
+    </div>
+</div>
+
+
+<!-- View Modal -->
+<div class="modal fade view-moda" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body d-flex">
+            <div class="avater me-4">
+            
+            </div>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            <div class="data-info mb-1 flex-grow-1">
+                <div class="d-flex  justify-content-between">
+                    <p>#1</p>
+                    <!-- <button type="button" ></button> -->
+                    <span type="button" class="material-icons" data-bs-dismiss="modal" aria-label="Close">close</span>
+                </div>
+                <p>Admin</p>
+                <p class="user-name mb-1">Emir Wicks</p>
+                <p class="user-email mb-3">emir.wicks@mail.com</p>
+                <div class="d-flex  justify-content-between">
+                    <div class="verified py-1 px-2">
+                        Verified
+                    </div>
+                    <span class="material-icons">
+                        expand_more
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Edit Modal -->
+<div class="modal fade form-moda edit-moda" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="d-flex  justify-content-between">
+                <h2 class="modal-title">Edit Admin</h2>
+                <span type="button" class="material-icons" data-bs-dismiss="modal" aria-label="Close">close</span>
+            </div>
+            <form action="post">
+                <!-- Account -->
+                <h3 class="modal-sub-title mb-3">Account</h3>
+                <div class="mb-3">
+                    <label for="account-name" class="colorm-label mb-1">Name</label>
+                    <input type="text" class="form-control" id="account-name" placeholder="Emir Wicks"> 
+                </div>
+                <div class="mb-4">
+                    <label for="account-email" class="colorm-label mb-1">Email</label>
+                    <input type="text" class="form-control" id="account-email" placeholder="emir.wicks@mail.com">
+                </div>
+                <hr class="mb-3">
+                <!-- Verification -->
+                <h3 class="modal-sub-title mb-3">Verification</h3>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <span class="material-icons check-circle">check_circle</span>
+                        <p class="fw-bold">Verified</p>
+                    </div>
+                    <p class="date">2020/4/12</p>
+                </div>
+                <button type="button" class="btn btn-disable mb-4 py-3" disabled>Send Verification Mail</button>
+                <hr class="mb-3">
+                <!-- Access Level -->
+                <h3 class="modal-sub-title mb-3">Access Level</h3>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Admin
+                    </button>
+                    <ul class="dropdown-menu mb-4" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <hr class="mb-3">
+                <!-- Custom Access -->
+                <h3 class="modal-sub-title mb-3">Custom Access</h3>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Lecture
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Coupon
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Message
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Setting
+                    </label>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Task Menu
+                    </label>
+                </div>
+                <hr class="mb-3">
+                <!-- Deactivate Account -->
+                <h3 class="modal-sub-title mb-3">Deactivate Account</h3>
+                <div class="d-flex">
+                    <span class="material-icons check-circle ms-2">warning</span>
+                    <p class="fw-bold text-danger">This cannot be undone!</p>
+                </div>
+                <button type="button" class="btn btn-outline-danger mb-5 py-3">Deactivate This Account</button>
+                <div class="form-footer d-flex justify-content-end"> 
+                    <button type="button" class="btn btn-outline-success me-3">Cancel</button>
+                    <button type="submit" class="btn btn-outline-success active">Update</button>
+                </div>
+            </form> 
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+<!-- New Admin Modal -->
+<div class="modal fade form-moda new-admin-moda" id="newAdminModal" tabindex="-1" aria-labelledby="newAdminModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="d-flex  justify-content-between">
+                <h2 class="modal-title">New Admin</h2>
+                <span type="button" class="material-icons" data-bs-dismiss="modal" aria-label="Close">close</span>
+            </div>
+            <form action="post">
+                <!-- Account -->
+                <h3 class="modal-sub-title mb-3">Account</h3>
+                <div class="mb-3">
+                    <label for="account-name" class="colorm-label mb-1">Name</label>
+                    <input type="text" class="form-control" id="account-name"> 
+                </div>
+                <div class="mb-4">
+                    <label for="account-email" class="colorm-label mb-1">Email</label>
+                    <input type="text" class="form-control" id="account-email">
+                </div>
+                <hr class="mb-3">
+                <!-- Verification -->
+                <h3 class="modal-sub-title mb-3">Verification</h3>
+                <div class="d-flex">
+                    <span class="material-icons check-circle">warning</span>
+                    <p class="fw-bold">Unverified</p>
+                </div>
+                <button type="button" class="btn btn-disable text-success mb-4 py-3">Send Verification Mail</button>
+                <hr class="mb-3">
+                <!-- Access Level -->
+                <h3 class="modal-sub-title mb-3">Access Level</h3>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        -Choose access level-
+                    </button>
+                    <ul class="dropdown-menu mb-4" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <hr class="mb-3">
+                <!-- Custom Access -->
+                <h3 class="modal-sub-title mb-3">Custom Access</h3>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Lecture
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Coupon
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Message
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Setting
+                    </label>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Task Menu
+                    </label>
+                </div>
+                <div class="form-footer d-flex justify-content-end"> 
+                    <button type="button" class="btn btn-outline-success me-3">Cancel</button>
+                    <button type="submit" class="btn btn-outline-success active">Add</button>
+                </div>
+            </form> 
+        </div>
+      </div>
     </div>
 </div>

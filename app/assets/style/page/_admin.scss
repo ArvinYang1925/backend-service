@@ -44,3 +44,98 @@
         color: $color-success;
     }
 }
+
+.view-moda {
+    .modal-body {
+        padding: 32px;
+        p {
+            margin: 0;
+        }
+        .btn-close {
+            width: 24px;
+            height: 24px;
+        }
+        .avater {
+            background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true');
+            background-position: center;
+            background-size: cover;
+            width: 141px;
+            height: 141px;
+        }
+        .user-name {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .user-email {
+            color: $color-gray-600;
+            font-size: 14px;
+        }
+        .verified{
+            font-size: 14px;
+            background: $color-gray-100;
+        }
+    }
+}
+
+.form-moda {
+    .modal-body {
+        padding: 32px;
+    }
+    .modal-title {
+        margin-bottom: 32px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .modal-sub-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    form {
+        lable {
+            font-size: 14px;
+        }
+        .form-control {
+            border-radius: 2px;
+        }
+        .check-circle {
+            margin-right: 10px;
+            color: $color-success;
+        }
+        .date {
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            border: 1px solid;
+            border-radius: 2px;
+        }
+        .btn-disable {
+            border-color: $color-gray-400;
+            color: $color-gray-400;
+        }
+        .dropdown-menu {
+            width: 100%;
+        }
+        .form-check-input {
+            border-color: $color-gray-900;
+        }
+        .form-footer {
+            .btn {
+                width: 115px;
+            }
+        }
+    }
+}
+
+.new-admin-moda {
+    .form-control {
+        border-color: $color-gray-900;
+    }
+}
+
+.edit-moda {
+    .form-control {
+        border-color: $color-gray-100;
+        background: $color-gray-100;
+    }
+}
