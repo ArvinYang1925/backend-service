@@ -63,6 +63,79 @@ a {
 .admin .icon-success {
   color: #198754; }
 
+.view-moda .modal-body {
+  padding: 32px; }
+  .view-moda .modal-body p {
+    margin: 0; }
+  .view-moda .modal-body .btn-close {
+    width: 24px;
+    height: 24px; }
+  .view-moda .modal-body .avater {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true");
+    background-position: center;
+    background-size: cover;
+    width: 141px;
+    height: 141px; }
+  .view-moda .modal-body .user-name {
+    font-weight: bold;
+    font-size: 24px; }
+  .view-moda .modal-body .user-email {
+    color: #6C757D;
+    font-size: 14px; }
+  .view-moda .modal-body .verified {
+    font-size: 14px;
+    background: #F8F9FA; }
+
+.form-moda .modal-body {
+  padding: 32px; }
+
+.form-moda .modal-title {
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 24px; }
+
+.form-moda .modal-sub-title {
+  font-weight: bold;
+  font-size: 20px; }
+
+.form-moda form lable {
+  font-size: 14px; }
+
+.form-moda form .form-control {
+  border-radius: 2px; }
+
+.form-moda form .check-circle {
+  margin-right: 10px;
+  color: #198754; }
+
+.form-moda form .date {
+  font-size: 14px; }
+
+.form-moda form .btn {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 2px; }
+
+.form-moda form .btn-disable {
+  border-color: #CED4DA;
+  color: #CED4DA; }
+
+.form-moda form .dropdown-menu {
+  width: 100%; }
+
+.form-moda form .form-check-input {
+  border-color: #212529; }
+
+.form-moda form .form-footer .btn {
+  width: 115px; }
+
+.new-admin-moda .form-control {
+  border-color: #212529; }
+
+.edit-moda .form-control {
+  border-color: #F8F9FA;
+  background: #F8F9FA; }
+
 .assignment .page-content {
   padding-left: 20px;
   padding-right: 20px; }
